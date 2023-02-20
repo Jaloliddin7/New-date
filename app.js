@@ -98,5 +98,4 @@ refresh.addEventListener('click' , ()=>{
     name1.textContent = name
     console.log(name);
     let a = Math.floor(Math.random() * 5 + 1)
-    wrapper.style.backgroundImage = `url('../imgs/jpg/img${a}.jpg')`
 })
