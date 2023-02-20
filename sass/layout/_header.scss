@@ -1,41 +1,232 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-*:focus{
+
+*:focus {
     outline: 1px dashed #000;
     outline-offset: 1px;
 }
-html{
+
+html {
     height: 100%;
-    scroll-behavior: initial;  
+    scroll-behavior: initial;
 }
-body{
+
+body {
     height: 100%;
     font-family: $site-fonts;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 
 }
-button{
+
+button {
     border: none;
     outline: none;
     cursor: pointer;
     display: inline-block;
     background-color: transparent;
 }
-input{
+
+input {
     background-color: transparent;
     border: none;
     outline: none;
 }
-img{
+
+img {
     display: flex;
 }
 
+ul {
+    list-style: none;
+}
 
+
+// Footer
+
+.button__wrap {
+    width: min(100%, 1136px);
+    margin: 0 auto;
+    display: flex;
+    padding: 56px 26px 0;
+    justify-content: space-between;
+
+    @include responsive(mobilniy) {
+        flex-direction: column;
+    }
+}
+
+.box {
+    width: min(100%, 484px);
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    margin-bottom: 16px;
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 3.6px;
+
+        @include responsive(mobilniy) {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 3.6px;
+        }
+
+    }
+
+    .clock {
+        display: flex;
+        align-self: end;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 200px;
+        letter-spacing: -5px;
+
+        @include responsive(mobilniy) {
+            font-size: 175px;
+            line-height: 175px;
+            letter-spacing: -5px;
+        }
+
+        @include responsive(medum) {
+            padding: 80px 34px;
+        }
+
+        @include responsive(smoll) {
+            padding: 32px 26px;
+
+        }
+    }
+
+    .bst {
+        display: flex;
+        align-self: end;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 28px;
+        padding-bottom: 27px;
+    }
+
+
+
+}
+
+.button__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include responsive(mobilniy) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.button {
+    display: flex;
+    align-self: end;
+    justify-self: end;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+    padding: 8px 9px 8px 21px;
+    border-radius: 28px;
+    background-color: $white-color;
+
+    @include responsive(mobilniy) {
+        justify-self: start;
+        margin-top: 80px;
+        align-self: start;
+
+    }
+
+    .text {
+        color: #00000093;
+    }
+}
+
+.bar_togle {
+    transform: translateY(100%);
+
+}
+
+.hidden {
+    display: none;
+}
+
+.button__wrap2 {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20.3871px);
+    transition: all .5s ease;
+    display: flex;
+    align-items: start;
+}
+
+.bar__list {
+    padding: 74px 26px 0;
+    width: min(100%, 1162px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 94px;
+    margin: 0 auto;
+    color: $primary-black-color;
+    letter-spacing: 3px;
+
+    .bar__item1 {
+        padding-right: 148px;
+        border-right: 1px solid $primary-black-color;
+    }
+
+    .bar__item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        h1 {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            letter-spacing: 0;
+            margin-bottom: 42px;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 9px;
+        }
+    }
+
+    .bar__title {}
+}
+
+.btn__img {
+    transition: all 0.5s ease;
+}
+
+.btn__rotate {
+    transform: rotate(180deg);
+}

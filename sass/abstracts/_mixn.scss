@@ -1,0 +1,12 @@
+
+@mixin responsive($max-width) {
+    @if $max-width == mobilniy{
+        @media (max-width:768px){ @content}
+    };
+    @if $max-width == medum{
+        @media (max-width:576px){ @content}
+    };
+    @if $max-width == smoll{
+        @media (max-width:375px){ @content}
+    };
+}
