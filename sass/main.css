@@ -176,7 +176,6 @@ ul {
   width: min(100%, 1136px);
   margin: 0 auto;
   display: flex;
-  padding: 56px 26px 0;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
@@ -339,4 +338,8 @@ ul {
 
 .btn__rotate {
   transform: rotate(180deg);
+}
+
+.padding {
+  padding: 56px 26px 0;
 }/*# sourceMappingURL=main.css.map */

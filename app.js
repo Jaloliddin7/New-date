@@ -69,7 +69,7 @@ btn.addEventListener('click', () => {
     text.classList.toggle('text2')
     text2.classList.toggle('text2')
     btn__img.classList.toggle('btn__rotate')
-
+    button__wrap.classList.toggle('padding')
 })
 
 
