@@ -97,5 +97,4 @@ refresh.addEventListener('click' , ()=>{
     header__wrap__text.textContent = words
     name1.textContent = name
     console.log(name);
-    let a = Math.floor(Math.random() * 5 + 1)
 })
