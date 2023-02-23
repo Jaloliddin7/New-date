@@ -14,7 +14,7 @@ body {
 .wrapper {
     position: absolute;
     opacity: 0.4;
-    width:100vw;
+    width: 100vw;
     height: 100vh;
     z-index: -1;
     background-image: url('../imgs/jpg/img4.jpg');
@@ -27,9 +27,9 @@ body {
     position: relative;
     width: min(100%, 1162px);
     margin: 0 auto;
-    padding: 56px 26px;
+    padding: 56px 26px 0;
     z-index: 1;
-    margin-bottom: 177px;
+    margin-bottom: 233px;
 
     @include responsive(mobilniy) {
         padding: 80px 64px 0px;
@@ -49,6 +49,7 @@ body {
 
 .header__wrap__text {
     width: min(100%, 540px);
+    min-height: 100px;
     color: $white-color;
     margin-bottom: 13px;
     position: relative;
@@ -96,6 +97,13 @@ body {
 .moon {
     display: none;
 }
+
 .none {
     display: block;
+}
+
+.all {
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }

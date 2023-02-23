@@ -52,9 +52,9 @@ body {
   position: relative;
   width: min(100%, 1162px);
   margin: 0 auto;
-  padding: 56px 26px;
+  padding: 56px 26px 0;
   z-index: 1;
-  margin-bottom: 177px;
+  margin-bottom: 233px;
 }
 @media (max-width: 768px) {
   .header {
@@ -75,6 +75,7 @@ body {
 
 .header__wrap__text {
   width: min(100%, 540px);
+  min-height: 100px;
   color: #fff;
   margin-bottom: 13px;
   position: relative;
@@ -119,6 +120,12 @@ body {
 
 .none {
   display: block;
+}
+
+.all {
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 *,
