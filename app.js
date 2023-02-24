@@ -23,7 +23,7 @@ let img = 'noch'
 
 function TimeFunc() {
     let dax = new Date();
-    let soat = dax.getHours()
+    let soat = dax.getHours() + 5
     let min = dax.getMinutes()
     let weekday1 = dax.getDay() 
     let start = new Date(dax.getFullYear(), 0, 0);
@@ -45,7 +45,7 @@ function TimeFunc() {
         }else if (soat > 12 && soat < 18) {
             day1.textContent = "GOOD AFTERNOON, IT’S CURRENTLY"
         }
-    } else if (soat >= 0 || soat >= 18 && soat < 23) {
+    } else if (soat >= 0 && soat >= 18 && soat < 23) {
         moon.classList.add('none')
         light.classList.add('moon')
         day1.textContent = "GOOD EVENING, IT’S CURRENTLY"
