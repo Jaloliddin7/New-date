@@ -23,7 +23,7 @@ let img = 'noch'
 
 function TimeFunc() {
     let dax = new Date();
-    let soat = dax.getHours() + 5
+    let soat = dax.getHours() 
     let min = dax.getMinutes()
     let weekday1 = dax.getDay() 
     let start = new Date(dax.getFullYear(), 0, 0);
